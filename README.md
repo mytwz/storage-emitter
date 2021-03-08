@@ -31,3 +31,5 @@ StorageEmitter.emit("test", 123, 234, 345)
 ```javascript
 // npm i -s storage-emitter-js
 ```
+
+谢谢
