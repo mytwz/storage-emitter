@@ -1,5 +1,5 @@
 {
-  "name": "storage-emitter",
+  "name": "storage-emitter-js",
   "version": "1.0.0",
   "description": "利用谷歌 localStorage 同源进程会同步消息的特性做的消息管理器",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mytwz/storage-emitter.git"
+    "url": "git+https://github.com/mytwz/storage-emitter-js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mytwz/storage-emitter/issues"
+    "url": "https://github.com/mytwz/storage-emitter-js/issues"
   },
-  "homepage": "https://github.com/mytwz/storage-emitter#readme",
+  "homepage": "https://github.com/mytwz/storage-emitter-js#readme",
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

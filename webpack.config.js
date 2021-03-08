@@ -23,7 +23,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         // 打包后的文件的文件
-        filename: "storageemitter.min.js",
+        filename: "storageemitter-js.min.js",
         // 打包配置后 （打包后不使用箭头函数）
         environment: {
             arrowFunction: true // 兼容IE11一下
