@@ -33,7 +33,6 @@ var StorageEmitter = /** @class */ (function () {
                 }
                 catch (error) {
                 }
-                localStorage.setItem(key, Date.now() + "");
             }
         }, true);
     }
@@ -102,6 +101,7 @@ var StorageEmitter = /** @class */ (function () {
             args[_i - 1] = arguments[_i];
         }
         localStorage.setItem(EventName + event, JSON.stringify(args));
+        localStorage.removeItem(EventName + event);
         return this;
     };
     /**
@@ -114,8 +114,9 @@ var StorageEmitter = /** @class */ (function () {
         for (var _i = 1; _i < arguments.length; _i++) {
             args[_i - 1] = arguments[_i];
         }
-        emit.call.apply(emit, __spreadArray([this, event], args));
         localStorage.setItem(EventName + event, JSON.stringify(args));
+        localStorage.removeItem(EventName + event);
+        emit.call.apply(emit, __spreadArray([this, event], args));
         return this;
     };
     return StorageEmitter;
