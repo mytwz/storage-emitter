@@ -23,7 +23,6 @@ class StorageEmitter {
                 } catch (error) {
                     
                 }
-                localStorage.setItem(key, Date.now()+"");
             }
         }, true);
     }
@@ -93,6 +92,7 @@ class StorageEmitter {
      */
     emit(event:string, ...args: any[]){
         localStorage.setItem(EventName + event, JSON.stringify(args));
+        localStorage.removeItem(EventName + event);
         return this;
     }
 
@@ -102,8 +102,9 @@ class StorageEmitter {
      * @param args 
      */
     emits(event:string, ...args: any[]){
-        emit.call(this, event, ...args);
         localStorage.setItem(EventName + event, JSON.stringify(args));
+        localStorage.removeItem(EventName + event);
+        emit.call(this, event, ...args);
         return this;
     }
 }
