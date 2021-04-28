@@ -1,6 +1,6 @@
 {
   "name": "storage-emitter-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "利用谷歌 localStorage 同源进程会同步消息的特性做的消息管理器",
   "main": "index.js",
   "scripts": {
